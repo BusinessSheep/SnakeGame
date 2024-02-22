@@ -22,14 +22,12 @@ public class gameFrame extends JFrame{
 
             @Override
             public void windowGainedFocus(WindowEvent e) {
-                // TODO Auto-generated method stub
-                throw new UnsupportedOperationException("Unimplemented method 'windowGainedFocus'");
+               
             }
 
             @Override
             public void windowLostFocus(WindowEvent e) {
-                // TODO Auto-generated method stub
-                throw new UnsupportedOperationException("Unimplemented method 'windowLostFocus'");
+                
             }
             
         });

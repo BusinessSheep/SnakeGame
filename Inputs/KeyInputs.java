@@ -20,7 +20,28 @@ public class KeyInputs implements KeyListener{
 
     @Override
     public void keyPressed(KeyEvent e) {
-       
+       switch(e.getKeyCode()) {
+        case KeyEvent.VK_LEFT:
+        if(panel.getSnakeGame().getSnake().getDir() != 1) {
+        panel.getSnakeGame().getSnake().setDir(0);
+        }
+        break;
+        case KeyEvent.VK_RIGHT:
+        if(panel.getSnakeGame().getSnake().getDir() != 0) {
+        panel.getSnakeGame().getSnake().setDir(1);
+        }
+        break;
+        case KeyEvent.VK_UP:
+        if(panel.getSnakeGame().getSnake().getDir() != 3) {
+        panel.getSnakeGame().getSnake().setDir(2);
+        }
+        break;
+        case KeyEvent.VK_DOWN:
+        if(panel.getSnakeGame().getSnake().getDir() != 2) {
+        panel.getSnakeGame().getSnake().setDir(3);
+        }
+        break;
+       }
     }
 
     @Override
